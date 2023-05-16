@@ -18,13 +18,20 @@
     <version>2.11.0</version>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<!-- https://mvnrepository.com/artifact/org.testng/testng 
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.7.0</version>
     <scope>test</scope>
-</dependency>
+</dependency> -->
+
+<dependency>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>7.5</version>
+	    <scope>test</scope>
+	</dependency>
 
 <!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
 <dependency>
@@ -68,8 +75,7 @@
   </dependencies>
   
   <build>
-  
-  <plugins>
+   <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -79,12 +85,10 @@
           <target>1.8</target>
         </configuration>
       </plugin>
-      
-      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.1.0</version>
+        <version>3.0.0-M9</version>
         <configuration>
           <suiteXmlFiles>
             <suiteXmlFile>testng.xml</suiteXmlFile>
@@ -93,8 +97,6 @@
       </plugin>
       
     </plugins>
-  
-  
   </build>
   
 </project>
